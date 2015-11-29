@@ -2,8 +2,8 @@
 #! MARKDOWN_FILE = test
 
 # Variables
-#! PREFIX = /Users/andrew/.pandoc
-#! BIB_FILE = /Users/andrew/Dropbox/Readings/Papers.bib
+#! PREFIX = /home/mariachi/.pandoc
+#! BIB_FILE = /home/mariachi/Dropbox/Working/library.bib
 #! CSL = american-political-science-association
 
 
@@ -34,42 +34,3 @@ generate output:
     output: 
       - $MARKDOWN_FILE.pdf
 
-  word:
-    help: convert to nice looking Word file through LibreOffice
-    dependencies:
-      - $MARKDOWN_FILE.md
-    formula: >
-      replace_includes $MARKDOWN_FILE.md | replace_pdfs | pandoc -r markdown+simple_tables+table_captions+yaml_metadata_block -w odt -S --default-image-extension=png --template=$PREFIX/templates/odt.template --reference-odt=$PREFIX/styles/reference.odt --filter pandoc-citeproc --csl=$PREFIX/csl/$CSL.csl --bibliography=$BIB_FILE -o $MARKDOWN_FILE.odt; 
-      /Applications/LibreOffice.app/Contents/MacOS/soffice --invisible --convert-to docx $MARKDOWN_FILE.odt;
-      rm $MARKDOWN_FILE.odt
-    output: 
-      - $MARKDOWN_FILE.docx
-
-  manuscript:
-    help: convert to a Word file formatted as a manuscript through LibreOffice
-    dependencies:
-      - $MARKDOWN_FILE.md
-    formula: >
-      replace_includes $MARKDOWN_FILE.md | replace_pdfs | pandoc -r markdown+simple_tables+table_captions+yaml_metadata_block -w odt -S --default-image-extension=png --template=$PREFIX/templates/odt-manuscript.template --reference-odt=$PREFIX/styles/reference-manuscript.odt --filter pandoc-citeproc --csl=$PREFIX/csl/$CSL.csl --bibliography=$BIB_FILE -o $MARKDOWN_FILE-manuscript.odt; 
-      /Applications/LibreOffice.app/Contents/MacOS/soffice --invisible --convert-to docx $MARKDOWN_FILE-manuscript.odt;
-      rm $MARKDOWN_FILE-manuscript.odt
-    output: 
-      - $MARKDOWN_FILE-manuscript.docx
-
-  html:
-    help: convert to HTML
-    dependencies:
-      - $MARKDOWN_FILE.md
-    formula: >
-      replace_includes $MARKDOWN_FILE.md | replace_pdfs | pandoc -r markdown+simple_tables+table_captions+yaml_metadata_block -w html -S --default-image-extension=png --template=$PREFIX/templates/html.template --css=$PREFIX/styles/marked/kultiad-serif.css --filter pandoc-citeproc --csl=$PREFIX/csl/$CSL.csl --bibliography=$BIB_FILE -o $MARKDOWN_FILE.html
-    output: 
-      - $MARKDOWN_FILE.html
-
-  bibliography:
-    help: extract citations into a separate BibTeX file
-    dependencies:
-      - $MARKDOWN_FILE.md
-    formula: >
-      bib_extract --bibtex_file $BIB_FILE $MARKDOWN_FILE.md $MARKDOWN_FILE.bib
-    output:
-      - $MARKDOWN_FILE.bib
