@@ -30,19 +30,19 @@
 MEXT = md
 
 # Location of Pandoc support files.
-PREFIX = /Users/andrew/.pandoc
+PREFIX = /home/mariachi/.pandoc
 
 # Location of your working bibliography file
-BIB_FILE = /Users/andrew/Dropbox/Readings/Papers.bib
+BIB_FILE = /home/mariachi/Dropbox/Working/library.bib
 
 # CSL stylesheet (located in the csl folder of the PREFIX directory).
 # Common CSLs:
 #	* american-political-science-association
-#   * chicago-fullnote-bibliography
+#	* chicago-fullnote-bibliography
 #	* chicago-fullnote-no-bib
-#   * chicago-syllabus-no-bib
-#   * apa
-#   * apsa-no-bib
+#	* chicago-syllabus-no-bib
+#	* apa
+#	* apsa-no-bib
 CSL = american-political-science-association
 
 # Cross reference options
@@ -58,11 +58,11 @@ CROSSREF = --filter pandoc-crossref -M figPrefix:"Figure" -M eqnPrefix:"Equation
 #--------------------
 # Color definitions
 #--------------------
-NO_COLOR    = \x1b[0m
+NO_COLOR	= \x1b[0m
 BOLD_COLOR	= \x1b[37;01m
-OK_COLOR    = \x1b[32;01m
-WARN_COLOR  = \x1b[33;01m
-ERROR_COLOR = \x1b[31;01m
+OK_COLOR	= \x1b[32;01m
+WARN_COLOR	= \x1b[33;01m
+ERROR_COLOR	= \x1b[31;01m
 
 
 # --------------------

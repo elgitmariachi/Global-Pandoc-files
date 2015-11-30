@@ -2,8 +2,8 @@
 #! MARKDOWN_FILE = PUT THE NAME HERE
 
 # Variables
-#! PREFIX = /Users/andrew/.pandoc
-#! BIB_FILE = /Users/andrew/Dropbox/Readings/Papers.bib
+#! PREFIX = /home/mariachi/.pandoc
+#! BIB_FILE = /home/mariachi/Dropbox/Working/.bib
 #! CSL = american-political-science-association
 #! CROSSREF = --filter pandoc-crossref -M figPrefix:"Figure" -M eqnPrefix:"Equation" -M tblPrefix:"Table"
 
