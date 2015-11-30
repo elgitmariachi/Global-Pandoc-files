@@ -2,3 +2,4 @@ csl/
 .DS_Store
 tests/.shastore
 filters/*
+tests/

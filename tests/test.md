@@ -1,8 +1,8 @@
 ---
 title: Sample document
 author:
-- name: Andrew Heiss
-  affiliation: Duke University
+- name: Andrew Heiss^1^
+  affiliation: ^1^Duke University
   email: andrew.heiss@duke.edu
 - name: Someone else
   affiliation: Duke University
@@ -10,16 +10,16 @@ author:
 date: September 9, 2014
 published: Incomplete *Draft*. Please do not cite without permission.
 abstract: Lorem ipsum *dolor* sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-blinded: True
+blinded: False
 ...
 
 
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco *laboris* nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in *voluptate* velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint **occaecat cupidatat** non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem^1^ ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco *laboris* nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in *voluptate* velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint **occaecat cupidatat** non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 # First level heading
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum [@Heiss:2012]. 
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum [@Ngo2013a]. 
 
 ## Second level heading
 
@@ -42,7 +42,7 @@ Be obtained in this my cell and leading me out to show what he was ordered. to b
 
 > That was what I was called? Jean Valjean was of the number On the nail whence hangs the rope's end round his neck, around like a bird, could have observed him and demanded in a congealed state:-- What do you want with me? said Marius. You shall have the two chairs the only light in the immense vice of falsehood, of injustice, of his misfortune only too little of the substance.^[Another footnote.]
 
-![This should be a caption](Figures/figure1.pdf)
+
 
 Facts and legends concerning this lost race of early Martians, who were too poor to pay the high tower of the palace, for other than her. own choice, and that it is this ray many strange things in my life, and of death. The face of a high pinnacle in their regard. Evidently devoid of all the finer sentiments of generosity and.
 
